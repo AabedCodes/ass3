@@ -126,7 +126,7 @@ while (!y.eof()){                 // reading input data from customers file and 
     customers[o].setname(Name);                 // INT_MIN and 0, respectively.
     customers[o].setAge(Age);
     int num=0;
-    for (int l=0; l<Size; l++){
+    for (int l=(O)%4; l<Size; l++){
         if (mechanics[l].isavailable(app)){
         customers[o].setappointment(app);
         mechanics[l].setappointments(app);
